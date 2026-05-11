@@ -56,3 +56,31 @@ nav a:hover::after {
 #menu-toggle {
     display: none;
 }
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        right: 0;
+
+        flex-direction: column;
+
+        background: white;
+
+        width: 200px;
+
+        padding: 20px;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+}
